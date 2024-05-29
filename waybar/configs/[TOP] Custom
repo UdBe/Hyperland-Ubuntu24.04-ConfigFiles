@@ -1,0 +1,49 @@
+// ### BASE: DEFAULT v2 (Laptop)  - Top ### //
+{
+    "include": "~/.config/waybar/modules",
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "spacing": 3,
+    "fixed-center": true,
+    "ipc": true,
+    "margin-top": 1,
+    "margin-left": 8,
+    "margin-right": 8,
+    
+    "modules-left": [
+        "temperature",		
+        "custom/separator#line",
+		"cpu",	
+		"memory",
+		"disk",
+        "custom/separator#blank",
+        "custom/separator#line",
+        "group/laptop",
+        "custom/separator#line",
+        "custom/weather"
+        ],
+    
+    "modules-center": [
+        "custom/swaync",
+        "custom/separator#dot-line",
+        "clock",
+        "custom/separator#dot-line",
+        "hyprland/workspaces#sway",
+        "custom/separator#dot-line",
+        "idle_inhibitor"
+        ], 
+    
+    "modules-right": [
+        "network",
+        "bluetooth",
+        "custom/separator#line",
+        "custom/cava_mviz",
+        "group/audio",
+        "custom/separator#line",
+        "custom/lock",
+        "custom/power",
+        ],
+    
+    }
